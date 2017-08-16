@@ -18,6 +18,7 @@ module.exports = ({types}) => ({
             if (path.node.specifiers.length === 1 && path.node.specifiers[0].exported.name === 'default') {
               hasExportDefault = true
             } else {
+              console.log(path);
               hasExportNamed = true
             }
             return
